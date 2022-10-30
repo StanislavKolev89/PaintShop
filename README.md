@@ -48,18 +48,20 @@ There are two type of users:
 **Java (JRE) 17**
 
 * <b>Windows</b> and <b>MacOS X</b> installers include JRE so just use them and don't think about internals.
-* On <b>Linux</b> you may need to install Java manually (usually by running `sudo apt-get install openjdk-14-jdk` or something similar).
+* On <b>Linux</b> you may need to install Java manually (usually by running `sudo apt-get install openjdk-17-jdk` or something similar).
 * If you don't use installer (on Windows or Mac OS X) you may need to download Java (JDK) from <a href="https://www.oracle.com/java/technologies/javase/jdk14-archive-downloads.html">Oracle website</a>.
 
 **MySQL Workbench 8.0.21**
 
 * You can download MySQL Workbench from official <a href="https://dev.mysql.com/downloads/workbench/"> MySQL Workbench website.
 
+* If you use IntelliJ IDEA the database management functionality is supported by the Database tools and SQL plugin.
+* 
 ## Building
 
 #### Prerequisites:
 
- 1. Java (JDK) 14 
+ 1. Java (JDK) 17
  2. Apache Maven 3+
  3. MySQL Dialect 8
  4. Internet access
@@ -83,7 +85,7 @@ There are two type of users:
 
   You can also just copy docker-compose.yaml file and execute it if you have locally installed Docker
 
-  Simply open terminal after you  and write the following command
+  Simply open terminal and write the following command
 
   ```
    docker-compose -f docker-compose.yaml up 
