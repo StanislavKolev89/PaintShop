@@ -56,7 +56,7 @@ There are two type of users:
 * You can download MySQL Workbench from official <a href="https://dev.mysql.com/downloads/workbench/"> MySQL Workbench website.
 
 * If you use IntelliJ IDEA the database management functionality is supported by the Database tools and SQL plugin.
-* 
+
 ## Building
 
 #### Prerequisites:
@@ -131,12 +131,12 @@ Database Diagram Screenshot
  Website Screenshots
  ---
  
- - Index Page- Without logged user
+ - Index Page - Without logged user
 
  ![indexpage](src/main/resources/static/screenshots/homeLoggedAdmin.png) 
 
 
- - Index Page- With logged user
+ - Index Page - With logged user
 
  ![indexpage](src/main/resources/static/screenshots/homeNoLoggedUser.png)
 
@@ -157,11 +157,11 @@ Database Diagram Screenshot
 
 ![adminpage](src/main/resources/static/screenshots/adminPanel.png)
 
-- Admin- All users page
+- Admin - All users page
 
 ![adminallusers](src/main/resources/static/screenshots/adminAllUsers.png)
 
-- Admin- All orders page
+- Admin - All orders page
 
 ![adminallorders](src/main/resources/static/screenshots/adminAllOrders.png)
 
@@ -178,7 +178,7 @@ Database Diagram Screenshot
 
 ![admineditProduct](src/main/resources/static/screenshots/editProduct.png)
 
-- Admin- All categories page
+- Admin - All categories page
 
 ![adminallusers](src/main/resources/static/screenshots/adminAllCategories.png)
 
