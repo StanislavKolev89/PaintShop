@@ -45,7 +45,7 @@ There are two type of users:
 
 **PaintShop run requirements:**
 
-**Java (JRE) 14**
+**Java (JRE) 17**
 
 * <b>Windows</b> and <b>MacOS X</b> installers include JRE so just use them and don't think about internals.
 * On <b>Linux</b> you may need to install Java manually (usually by running `sudo apt-get install openjdk-14-jdk` or something similar).
@@ -99,6 +99,27 @@ There are two type of users:
 ### Routes
 
 
+URLs | Description
+---------|---------
+*/* | Index page - page with carousel showing all available categories of products.
+*/users/login* | Login page - page where user can enter login information.
+*/users/register* | Register page - page where user can make registration.
+*/contacts* | Contacts page - page with contact information.
+*/used/products/forSale* | Used products page - page where all second hand products can be seen.
+*/products/all* | New products page - page where all new products for sale can be seen.
+*/admin* | Admin panel page - page with options for admin to check and edit additional information about users,products,orders and categories.
+*/admin/users/all* | All users page - page where admin can see all registered users with options for deleteing ,giving or revoking admin rights.
+*/admin/orders/all* |All orders page - page where admin can see all orders,their details and also remove them.
+*/admin/orders/details/{id}* | Page where admin can see order details.
+*/admin/products/all* | All products page - page where admin can see all new products for sale with option to delete or edit them.
+*/admin/products/edit/{id}* | Page where admin can edit products info, price and category.
+*/admin/categories/all* | All categories page - page where admin can see all categories with option to edit, delete them or add new one. 
+*/admin/categories/edit/1* | Page where admin can edit category details.
+*/users/profile* | Page where user can edit some personal information.
+*/used/products/details/{id}* | Page where user can see specific details of a product.
+*/users/logout* | User logout.
+
+
 Database Diagram Screenshot
  ---
  
@@ -134,40 +155,82 @@ Database Diagram Screenshot
 
 ![adminpage](src/main/resources/static/screenshots/adminPanel.png)
 
-- Admin- All Users Page
+- Admin- All users page
 
 ![adminallusers](src/main/resources/static/screenshots/adminAllUsers.png)
 
-- Admin- All Orders Page
+- Admin- All orders page
 
 ![adminallorders](src/main/resources/static/screenshots/adminAllOrders.png)
 
+- Admin - Single order details page 
 
-- Admin- All Products Page
+![adminOrderDetails](src/main/resources/static/screenshots/orderDetails.png)
+
+
+- Admin - All products page
 
 ![adminallproducts](src/main/resources/static/screenshots/adminAllProducts.png)
 
+- Admin - Edit product page 
 
-- Admin- All Categories Page
+![admineditProduct](src/main/resources/static/screenshots/editProduct.png)
+
+- Admin- All categories page
 
 ![adminallusers](src/main/resources/static/screenshots/adminAllCategories.png)
 
--My Profile Page 
+-Admin - Edit category page 
+
+![adminallusers](src/main/resources/static/screenshots/editCategory.png)
+
+- All products page 
+
+![allProducts](src/main/resources/static/screenshots/allProducts.png)
+
+ ##### Products can be filtered by category
+
+  ![allProductsCategores](src/main/resources/static/screenshots/allProductsCategories.png)
+
+
+  ![allProductsClear](src/main/resources/static/screenshots/allProductsClear.png)
+
+
+  ![allProductsBasecoat](src/main/resources/static/screenshots/allProductsBasecoat.png)
+
+- Single product page 
+
+![allProducts](src/main/resources/static/screenshots/singleProductPage.png)
+
+##### If there are not enough items in stock a warning message appear.
+
+![notEnoughItems](src/main/resources/static/screenshots/notEnoughItems.png)
+
+
+- My profile page 
 
 ![myProfile](src/main/resources/static/screenshots/myProfile.png)
 
--Edit Product Page (User can edit or delete own products)
+- Edit product page (User can edit or delete own products)
  
 ![userEditProductPage](src/main/resources/static/screenshots/editUsedProduct.png)
 
--Delete Product Page (Admin can delete other users products)
+- Delete product page (Admin can delete other users products)
 
 ![adminDeleteProductPage](src/main/resources/static/screenshots/adminDeleteUsedProduct.png)
 
 
--Shopping cart Page (User can check products in cart)
+- Shopping cart page (User can check products in cart)
 
 ![adminDeleteProductPage](src/main/resources/static/screenshots/shoppingCart.png)
+
+
+- Add comments (Users can add comments for all products)
+
+![addcommentsone](src/main/resources/static/screenshots/commentsAddOne.png)
+
+![addcommentstwo](src/main/resources/static/screenshots/commentsAddTwo.png)
+
 
 
  
